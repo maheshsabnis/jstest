@@ -1,15 +1,10 @@
-describe("BooleanTest", function() {
-  it("should returns true", function() {
-    // placeholder for data received
-    // from external method
-    var x = true;
-    expect(x).toBeTruthy();
+describe("Check True/False", function() {
+  it("Check for ToBeTruthy", function() {
+    var c = new code();
+    expect(c.fnTrue(11)).toBeTruthy();
   });
-
-  it("should returns false", function() {
-    // placeholder for data received
-    // from external method
-    var x = false;
-    expect(x).toBeFalsy();
+  it("Check for ToBeFalsy", function() {
+    var c = new code();
+    expect(c.fnTrue(8)).toBeFalsy();
   });
 });
